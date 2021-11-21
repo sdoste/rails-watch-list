@@ -7,9 +7,15 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
 
   <body>
+    <nav class="navbar bg-light bg-light justify-content-between ">
+      <%= link_to 'My Lists', lists_path  %>
+      <%= link_to 'New List', new_list_path  %>
+    </nav>
     <%= yield %>
   </body>
 </html>
